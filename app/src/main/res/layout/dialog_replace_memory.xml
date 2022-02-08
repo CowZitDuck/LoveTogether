@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btn_add_image_memory"
+        android:layout_width="148dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_image_memory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_title_memory"
+        android:layout_width="238dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:maxLength="50"
+        android:hint="Tiêu đề"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_image_memory"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_image_memory"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_date_memory"
+        android:layout_width="238dp"
+        android:layout_height="40dp"
+        android:maxLength="20"
+        android:textColor="@color/white"
+        android:hint="Ngày kỉ niệm"
+        app:layout_constraintStart_toStartOf="@+id/et_title_memory"
+        app:layout_constraintTop_toBottomOf="@+id/et_title_memory"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_content_memory"
+        android:layout_width="237dp"
+        android:layout_height="72dp"
+        android:maxLength="500"
+        android:hint="Nội dung"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_image_memory"
+        app:layout_constraintStart_toStartOf="@+id/et_title_memory" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Xong"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/et_date_memory"
+        app:layout_constraintTop_toTopOf="@+id/btn_dis" />
+
+    <Button
+        android:id="@+id/btn_dis"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="Không"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_ok"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_image_memory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_memory"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avata_female"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_memory"
+        android:layout_width="236dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/love_5"
+        android:text="Tiêu đề kỉ niệm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_memory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_date_memory"
+        android:layout_width="236dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/love_4"
+        android:text="Ngày kỉ niệm"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_memory"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_memory" />
+
+    <TextView
+        android:id="@+id/tv_content_memory"
+        android:layout_width="236dp"
+        android:layout_height="89dp"
+        android:fontFamily="@font/love_3"
+        android:text="Con ten đề mô alo alo 1234"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_memory"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_memory" />
+</androidx.constraintlayout.widget.ConstraintLayout>

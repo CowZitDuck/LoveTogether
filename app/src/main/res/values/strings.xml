@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Love Together</string>
+    <string name="todo">TODO</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="love">\nngày nhớ em</string>
+    <string name="male_name">Male Name</string>
+    <string name="female_name">Female Name</string>
+    <string name="defaut_birthday">01/01/2003</string>
+    <string name="Title">Love Together</string>
+    <string name="change_background">Thay đổi hình nền</string>
+    <string name="set_background">Đặt làm hình nền</string>
+    <string name="delete">Xóa</string>
+    <string name="set_background_device">đặt làm hình nền điện thoại(coming soon)</string>
+    <string name="choose_day">Chọn ngày</string>
+    <string name="change_quote">Sửa thư</string>
+    <dimen name="small_heart_width">61dp</dimen>
+    <dimen name="small_heart_height">46dp</dimen>
+</resources>

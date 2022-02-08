@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/wp_7"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/love_3"
+        android:text="@string/Title"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp2_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title"
+        app:srcCompat="@drawable/setting"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <FrameLayout
+        android:id="@+id/frg_avata"
+        android:name="com.example.lovetogether.Person.AvataFragment"
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="74dp" />
+
+    <FrameLayout
+        android:id="@+id/frg_background"
+        android:name="com.example.lovetogether.Person.BackgroundFragment"
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="74dp" />
+
+    <FrameLayout
+        android:id="@+id/frg_edit_text"
+        android:name="com.example.lovetogether.Person.EditTextFragment"
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="74dp" />
+
+    <FrameLayout
+        android:id="@+id/frg_information"
+        android:name="com.example.lovetogether.Person.InformationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="74dp" />
+
+    <ImageButton
+        android:id="@+id/btn_down_person"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_marginBottom="200dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_choose_avata_male"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_down_person"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_choose_avata_female"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_down_person"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_up_person"
+        android:layout_width="50dp"
+        android:layout_height="12dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/slide_up"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <FrameLayout
+        android:id="@+id/frg_setting"
+        android:name="com.example.lovetogether.Setting.SettingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="990dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_goneMarginTop="5dp" />
+
+    <FrameLayout
+        android:id="@+id/frg_choose_background"
+        android:name="com.example.lovetogether.Setting.ChooseBackgroundFragment"
+        android:layout_width="match_parent"
+        android:layout_height="990dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_goneMarginTop="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

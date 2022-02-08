@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_object"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_choose_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/font_6"
+        android:text="@string/change_background"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:drawable/bottom_bar" />
+
+    <Switch
+        android:id="@+id/sw_nofi"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:fontFamily="@font/font_6"
+        android:minHeight="48dp"
+        android:text="   Hiện lên thanh thông báo(Coming soon)"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

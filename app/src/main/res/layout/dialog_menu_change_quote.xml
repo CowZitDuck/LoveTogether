@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_set_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="@string/choose_day" />
+
+    <Button
+        android:id="@+id/btn_change_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="Đổi tên                              " />
+
+    <Button
+        android:id="@+id/btn_change_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="@string/change_quote" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

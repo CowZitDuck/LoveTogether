@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_change_name_male"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/love_5"
+        android:text="@string/male_name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btn_change_name_male"
+        android:layout_width="180dp"
+        android:layout_height="28dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@id/tv_change_name_male"
+        app:layout_constraintTop_toTopOf="@id/tv_change_name_male"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/tv_change_birthday_male"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/love_5"
+        android:text="@string/defaut_birthday"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_change_name_male"
+        app:layout_constraintTop_toBottomOf="@+id/tv_change_name_male"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/btn_change_birthday_male"
+        android:layout_width="180dp"
+        android:layout_height="28dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@id/tv_change_birthday_male"
+        app:layout_constraintTop_toTopOf="@id/tv_change_birthday_male"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_change_name_female"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/love_5"
+        android:text="@string/female_name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/tv_change_name_male" />
+
+    <Button
+        android:id="@+id/btn_change_name_female"
+        android:layout_width="180dp"
+        android:layout_height="28dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@id/tv_change_name_female"
+        app:layout_constraintTop_toTopOf="@id/tv_change_name_female"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_change_birthday_female"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/love_5"
+        android:text="@string/defaut_birthday"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_change_name_female"
+        app:layout_constraintTop_toBottomOf="@+id/tv_change_name_female" />
+
+    <Button
+        android:id="@+id/btn_change_birthday_female"
+        android:layout_width="180dp"
+        android:layout_height="28dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@id/tv_change_birthday_female"
+        app:layout_constraintTop_toTopOf="@id/tv_change_birthday_female"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

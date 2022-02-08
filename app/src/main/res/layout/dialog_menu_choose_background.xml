@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_set_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="@string/set_background" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/btn_set_background_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="@string/set_background_device" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
